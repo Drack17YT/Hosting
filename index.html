@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje Digital</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendizaje Digital</h1>
+        <p>Recursos educativos para todos</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="inicio" class="bienvenida">
+            <h2>Bienvenido a nuestro portal educativo</h2>
+            <p>Ofrecemos recursos gratuitos para estudiantes de todas las edades.</p>
+            <img src="https://via.placeholder.com/600x300?text=Aprendizaje+Digital" alt="Estudiantes aprendiendo">
+        </section>
+        
+        <section class="destacados">
+            <article>
+                <h3>Matemáticas</h3>
+                <p>Domina los conceptos básicos y avanzados de matemáticas.</p>
+                <a href="#cursos" class="btn">Ver cursos</a>
+            </article>
+            <article>
+                <h3>Ciencias</h3>
+                <p>Explora el fascinante mundo de la ciencia y la naturaleza.</p>
+                <a href="#cursos" class="btn">Ver cursos</a>
+            </article>
+            <article>
+                <h3>Programación</h3>
+                <p>Aprende a crear tus propias aplicaciones y sitios web.</p>
+                <a href="#cursos" class="btn">Ver cursos</a>
+            </article>
+        </section>
+        
+        <section id="cursos" class="seccion-cursos">
+            <h2>Nuestros Cursos</h2>
+            
+            <div class="lista-cursos">
+                <div class="curso">
+                    <h3>Matemáticas Básicas</h3>
+                    <p>Curso introductorio a las matemáticas para principiantes. Cubre aritmética, álgebra básica y geometría elemental.</p>
+                    <span class="duracion">Duración: 4 semanas</span>
+                    <a href="#" class="btn">Inscribirse</a>
+                </div>
+                
+                <div class="curso">
+                    <h3>Introducción a la Biología</h3>
+                    <p>Aprende los fundamentos de la biología celular y molecular, con enfoque en procesos vitales básicos.</p>
+                    <span class="duracion">Duración: 6 semanas</span>
+                    <a href="#" class="btn">Inscribirse</a>
+                </div>
+                
+                <div class="curso">
+                    <h3>HTML y CSS para Principiantes</h3>
+                    <p>Crea tu primer sitio web con HTML y CSS. Aprende la estructura básica de páginas web y cómo darles estilo.</p>
+                    <span class="duracion">Duración: 5 semanas</span>
+                    <a href="#" class="btn">Inscribirse</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            
+            <form class="form-contacto" id="formContacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentario">Mensaje:</label>
+                    <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            
+            <div class="info-contacto">
+                <h3>Otras formas de contacto</h3>
+                <p><strong>Email:</strong> info@aprendizajedigital.com</p>
+                <p><strong>Teléfono:</strong> +1 234 567 890</p>
+                <p><strong>Dirección:</strong> Calle Educación 123, Ciudad del Conocimiento</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Aprendizaje Digital. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('formContacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
